@@ -1,0 +1,7 @@
+proto "event.proto"
+
+event_times: table collection of time: float;
+
+in: EventEntry = input;
+
+emit event_times <- in.time;
