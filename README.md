@@ -8,4 +8,4 @@ This only works on Linux for the moment.
 # Workflow
     $ mvn compile assembly:assembly assembly:single
     $ java -jar target/trial-1.0-SNAPSHOT-jar-with-dependencies.jar > example.recordio
-    $ szl -program example.szl example.recordio
+    $ szl -program example.szl -use_recordio=true example.recordio
