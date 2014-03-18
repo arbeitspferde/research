@@ -2,6 +2,6 @@ proto "event.proto"
 
 event_times: table collection of time: float;
 
-in: EventEntry = input;
+in: org.arbeitspferde.groningen.proto_.EventEntry = input;
 
-emit event_times <- in.time;
+emit event_times <- float(in.time_);
